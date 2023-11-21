@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pulse Lab — University of Washington</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/pulse-logo.png" alt="" /></span>
+					<h1 id="logo"><a href="#">PULSE Lab</a></h1>
+					<p>Public understanding, learning, and science engagement</p>
+					<p align="left">» <a href="../index.html">Home</a> » Blog post</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Introduction</a></li>
+						<li><a href="#two">Interviews</a></li>
+                        <li><a href="#three">Design</a></li>
+						<li><a href="#four">Evaluation</a></li>
+						<li><a href="#five">Discussion</a></li>
+						<li><a href="#six">References</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h3>Meta-summaries for COVID-19 vaccine safety research</h3>
+										<p>November 21th, 2022</p>
+										<p>By Spencer Williams</p>
+									</header>
+									<h4>How can we improve people's awareness and trust of covid vaccine safety research?</h4>
+									<p>It goes without saying that the COVID-19 pandemic has been a severe public health crisis, and even though safe/effective vaccines are available, a lack of trust
+										in those vaccines has led to reduced uptake, which in turn, has led to excess hospitalization and death [1]. To address this, we wanted to design ways of summarizing
+										the state of research on covid vaccine safety, in an informative and trustworthy way. 
+									  </p>
+									  
+									  <p>To do that, we needed to better understand the needs of vaccine-hesitant people. Past research has emphasized the importance of empathy, respect, and "facts over
+										exhortations" [2] when communicating about vaccines, so we aimed to design research summaries that provided what various vaccine-hesitant groups wanted to know about,
+										in an easy-to-understand, straightforward way. To do this, we began with a set of co-design interviews (n = 22 vaccine-hesitant individuals recruited from MTurk), came up with a list of design requirements to meet those needs,
+										and iteratively designed vaccine research "meta-summaries" that provided transparent overviews of vaccine safety research, along with relevant metascientific information.
+									  </p>
+									  
+									  <p>Here, I'll walk through the outcomes of those interviews and co-design sessions, our design itself, and it's impact.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Co-design interviews</h3>
+									<p>For details on the methods you can check out the full paper, but in general, we started with a quick interview about participants' experiences looking for information
+										on the vaccines, showed a few wireframe prototypes of potential research summaries, and had them sketch their own ideal designs. 
+									  </p>
+									  
+									  <p>First, we found that while some of our participants (a mix of fence-sitters and more hardline vaccine skeptics) saw the value in scientific studies as information sources, there were a 
+										number of barriers to using those studies to answer their questions about vaccine safety:
+									  </p>
+									  
+									  <ul>
+										<li>Papers were hard to access (they were often paywalled)</li>
+										<li>Papers were difficult to understand for non-experts</li>
+										<li>Papers were overly-detailed or "boring,"" making it hard to extract key takeaways</li>
+									  </ul>
+									  
+									  <p>In terms of participants' information needs, there were two main categories. First, participants who already had some trust of scientific institutions were mainly 
+										concerned with the <b>quantity and consistency</b> of vaccine research studies. How much data is there? Do the studies all tell the same story? This weight-of-evidence
+										information was considered useful in making judgements about vaccine safety overall. 
+									  </p>
+									  
+									  <p>However, for participants who had less trust of science, they were also concerned about whether the underlying studies were credible in the first place. For them
+										<b>credibility signifiers</b> could include things like funding source (pharmaceutical companies vs. government agencies vs. universities vs. non-profits...), country
+										(some felt US-based studies were untrustworthy), or given author's or lab's previous record of research (are they a domain expert, do they usually publish results in 
+										one direction or another...?). These participants needed to know the studies themselves could be trusted before worrying about the quantity or consistency of data. 
+									  </p>
+									  
+									  <p>By combining these findings with more low-level design details based on our participants sketches, we developed a list of design requirements for meta-summaries of 
+										vaccine safety research:
+									  </p>
+									  
+									  <ul>
+										<li>Provide simple, concise, text-based summaries of the information.</li>
+										<li>Provide interactions for details-on-demand, to provide deeper insights for those who want to interrogate
+										  the literature and ensure credibility.</li>
+										<li>Visually convey the quantity of research.</li>
+										<li>Visually convey the consistency of research.</li>
+										<li>Provide key metascientific signals of credibility (e.g. funding source).</li>
+										<li>Signal that the research displayed is representative of the full body of COVID-19 vaccine safety research.</li>
+									  </ul>
+								</div>
+							</section>
+
+                        <!-- Three -->
+                        <section id="three">
+                            <div class="container">
+                                <h3>A meta-summary of COVID-19 vaccine safety research</h3>
+                                <p>Based on those design requirements, we developed interactive meta-summaries of COVID-19 vaccine safety research. We created two versions: one that <a class = "light" href="https://www.figma.com/proto/yj1diONXp4Dnc29AmDMmWZ/Vaccine-Safety-Graph?node-id=1123%3A4211&scaling=min-zoom&page-id=1043%3A2&starting-point-node-id=1123%3A4211">
+									summarized vaccine safety research ("safety-only")
+								  </a>
+									, and that included <a class = "light" href= "https://www.figma.com/proto/yj1diONXp4Dnc29AmDMmWZ/Vaccine-Safety-Graph?node-id=1027%3A807&scaling=min-zoom&page-id=1027%3A2&starting-point-node-id=1027%3A807">
+									  additional information about vaccine efficacy ("full version").</a> 
+									  In general, these designs followed our requirements above, providing both high-level messages about the quantity and consistency of research, highlighting credibility 
+									  signifiers (i.e. funding source), and providing details on demand for users who wanted to query the papers more deeply. 
+								  </p>
+								  
+								  <p>(If the figma links go down at some point, see the full paper for details on these designs.)</p>
+								  
+								  <p>
+									Importantly, we were also careful to frame our design as providing useful information, but not telling users what we think they should do with that information. This 
+									approach has been shown to reduce <b>psychological reactance</b>, a phenomenon where people react negatively to messages if they feel their freedom is being threatened. 
+									Our messaging was adapted from prior work [3]. 
+								  </p>
+                            </div>
+                        </section>
+
+						<!-- Four -->
+                        <section id="four">
+                            <div class="container">
+                                <h3>Evaluation</h3>
+                                <p>We tested both of our designs against a control condition using information from the CDC page about vaccine safety research (see full paper). Testing with a sample 
+									of unvaccinated participants on MTurk (n = 863), we found that those who saw our experimental conditions felt there was more vaccine safety research than they'd thought
+									(p = .006, eta-squared = .012), that the research was more consistent than they'd thought (p < .001, eta-squared = .022), and that the research showed vaccines were safer than they'd thought
+									(p < .001, eta-squared = .034), compared to those who saw the CDC version. Moreover, participants also trusted our meta-summaries more than the CDC information (p = .035, eta-squared = .008).
+									In general, these were small but (usually) highly-significant effects. 
+								  </p>
+								  
+								  <p>However, there was no effect of our meta-summaries on participants' concern about covid vaccine safety overall, their trust of science overall, or their intention to get vaccinated</p>
+								  
+								  <p>Finally, we ran a follow-up study 1 week after deploying our first evaluation, where we asked participants about how they may have thought about or used the information
+									they'd over the course of that week. Overall, they were more likely to have discussed our meta-summaries with other people after reading them, compared with the CDC version (see below table for logistic regression).
+								  </p>
+
+								  <table>
+									<tr>
+									  <th>Variable</th>
+									  <th>Beta</th>
+									  <th>SE</th>
+									  <th>p</th>
+									  <th>OR</th>
+									</tr>
+									<tr>
+									  <td>Intercept</td>
+									  <td>-1.28</td>
+									  <td>0.17</td>
+									  <td>p < .001</td>
+									  <td> </td>
+									</tr>
+									<tr>
+									  <td>Safety only</td>
+									  <td>0.51</td>
+									  <td>0.24</td>
+									  <td>p = .031</td>
+									  <td>1.67</td>
+									</tr>
+									<tr>
+									  <td>Full version</td>
+									  <td>0.40</td>
+									  <td>0.24</td>
+									  <td>p = .098</td>
+									  <td>1.49</td>
+									</tr>
+								  </table> 
+                            </div>
+                            
+                        </section>
+
+						<!-- Five -->
+                        <section id="five">
+                            <div class="container">
+                                <h3>Closing thoughts</h3>
+                                <p>Overall, we were able to build meta-summaries of covid vaccine safety research that met the needs of vaccine-hesitant people moreso than the then-current CDC page. 
+									Our approach improved people's awareness and understanding of that body of research, in a way they felt was more believable and accurate. There was even a trickle-down 
+									effect, where participants were more likely to talk to others about it too.
+								  </p>
+								  
+								  <p>However, our meta-summaries didn't end up convincing vaccine-hesitant people to get vaccinated yet, suggesting a need for future work. One problem was that our 
+									summaries didn't significantly affect participants' trust of the underlying science, which could be a key component of trust in this case.
+								  </p>
+								  
+								  <p>One promising future avenue for this kind of research could be to better empower people to assess the scientific literature. Feelings of powerlessness have been shown to 
+									be significantly associated with conspiracy beliefs [4], suggesting that interventions to empower people may reduce their susceptibility to that kind of thinking. 
+									By guiding skeptical audiences to critically-but-competently evaluate the studies provided, or on how to use the metascientific information we provide as useful heuristics (e.g. for research quantity or credibility), it may be
+									possible to further increase trust and understanding of science using a metascience-based approach as we have</p>
+								  
+								  <p>In general, we have shown that direct summaries of scientific research can be a useful way of communicating about vaccine safety. Past work has suggested that scientific 
+									consensus messaging should focus more on <i>why</i> scientific consensus exists, rather than just explaining that it does (e.g. "97% of scientists believe in anthropogenic climate change") [5]. 
+									By providing a more transparent look at the weight of scientific evidence, we hope to build public understanding of controversial and/or important scientific topics in
+									an understandable and trustworthy way.
+								  </p>
+                            </div>
+                        </section>
+
+						<!-- Six -->
+                        <section id="six">
+                            <div class="container">
+                                <h3>References</h3>
+                                <p>[1] Cuadros, D. F., Miller, F. D., Awad, S., Coule, P. & MacKinnon, N. J. Analysis of vaccination rates and new COVID-19 infections by US county, July–August 2021. JAMA Netw. Open 5(2), e2147915–e2147915 (2022)</p>
+								<p>[2] Palmedo, P. C., Rauh, L., Lathan, H. S. & Ratzan, S. C. Exploring distrust in the wait and see: Lessons for vaccine communication. Am. Behav. Sci. 1, 27642 (2021)</p>
+								<p>[3] Richards, A. S., Bessarabova, E., Banas, J. A. & Bernard, D. R. Reducing psychological reactance to health promotion messages: Comparing preemptive and postscript mitigation strategies. Health Commun. 37(3), 366–374 (2020)</p>
+								<p>[4] Douglas, K. M., Sutton, R. M. & Cichocka, A. The psychology of conspiracy theories. Curr. Dir. Psychol. Sci. 26(6), 538–542 (2017)</p>
+								<p>[5] Landrum, A. R., & Slater, M. H. (2020). Open questions in scientific consensus messaging research. Environmental Communication, 14(8), 1033-1046.</p>
+                            </div>
+                        </section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
