@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pulse Lab — University of Washington</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/pulse-logo.png" alt="" /></span>
+					<h1 id="logo"><a href="#">PULSE Lab</a></h1>
+					<p>Public understanding, learning, and science engagement</p>
+					<p align="left">» <a href="../index.html">Home</a> » Blog post</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Introduction</a></li>
+						<li><a href="#two">Interviews</a></li>
+                        <li><a href="#three">Creators' Perspectives</a></li>
+						<li><a href="#four">Closing Thoughts</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h3>Exploring AI Counterspeech Tools for Content Moderation</h3>
+										<p>October 23rd, 2025</p>
+										<p>By Spencer Williams</p>
+										<p>Original research led by Phoebe Yiqing Huang</p>
+									</header>
+									<h4>How can we help online creators foster safer communities using AI?</h4>
+									<p>Anyone who has been on the internet for more than 5 minutes knows that online hate speech and harassment is a serious and persistent problem. The vast majority of online content creators
+										have had to deal with vitriolic speech in the past, and while many moderation tools exist across platforms (reporting, blocking, or muting users, automated content flagging, etc), such
+										tools can be slow, incomplete, innacurate, and often require a significant emotional investment from creators.
+									  </p>
+									  
+									  <p>Recently, the idea of "counterspeech" as an alternative to blocking or censoring hateful speech has gained interest. Counterspeech is all about engaging with users, providing
+										alternative narratives that run counter to the hateful speech in question, using humor or other tactics to defuse vitriol, highlighting facts or correcting misinformation,
+										 or otherwise pushing back against harmful frames and narratives. There's some promising evidence supporting the benefits of counterspeech in online spaces 
+										 <a class = "light" href= "https://dl.acm.org/doi/pdf/10.1145/3757589">(our paper has an overview of this)</a>, but engaging with every hateful narrative in one's large online
+										 community is a pretty huge undertaking, especially given how emotionally draining it can be. That's where AI (maybe?) comes in.  
+									  </p>
+									  
+									  <p>Thus, our paper was primarily interested in exploring several potential concepts for AI-supported counterspeech. Below, I'll walk through what we did, and what we found.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Interviews and concept testing with online creators</h3>
+									<p>Overall, our team conducted 15 interviews with content creators on various Chinese social media platforms. The majority were active on Xiaohongshu, although we also spoke to 
+										creators on TikTok, Bilibili, WeChat, and Weibo as well. Creators in our sample varied widely in platform size, with ~1500 followers on the low end to over 2,000,000 on the high end.
+										The interviews started with some basic questions about the creators' backgrounds, content, and general moderation practices. Then, they were asked about three possible AI counterspeech
+										concepts to ground the discussion. Here's how the three concepts were framed in the interviews:
+									  </p>
+
+									  <h4>Concept 1: AI as an independant counterspeaker</h4>
+
+									  <p>"Imagine you receive a harmful comment on one of your regular posts. In this concept,
+										an AI steps in as a third-party participant in the comment section. It joins the conversation on its
+										own, like another user, after detecting the harmful comment, or when someone invites it. The AI
+										might post a message to encourage empathy, help others understand each other’s views, or flag
+										the comment as inappropriate. It acts like a chatbot trained in counterspeech strategies, aiming to
+										calm things down and support healthier dialogue in your comment section."</p>
+
+									  <h4>Concept 2: AI assisting creators in crafting counterspeech</h4>
+
+									  <p>"Imagine you receive a harmful comment on one of your usual posts. This tool suggests
+										replies or helps you revise your own, aiming to improve your response for counterspeech purposes.
+										It’s a co-writing assistant that supports you in crafting replies using different counterspeech
+										strategies."</p>
+
+									  <h4>Concept 3: AI prompting bystanders to engage</h4>
+
+									  <p>"Imagine you receive a harmful comment on one of your usual posts. In this concept, the
+										AI detects the hurtful comment and sends a prompt to your followers or other active users, inviting
+										them to help you respond. Those who are notified can choose whether or not to reply, offering
+										support or counterspeech voluntarily."</p>
+									  
+									  <p>Participants were asked to reflect on each of these concepts, discussing what they saw as their potential strengths and limitations, and what potential (if any) they 
+										saw for AI moderation in this space.
+									  </p>
+								</div>
+							</section>
+
+                        <!-- Three -->
+                        <section id="three">
+                            <div class="container">
+                                <h3>Creators' perspectives on AI counterspeech</h3>
+                                <p>Below, you can see a summary of how creators reacted to each of the three concepts:
+								  </p>
+								  
+								  <table>
+									<caption>
+										Creator reactions to AI-supported counterspeech concepts
+									</caption>
+									<thead>
+										<tr>
+										<th>Concept</th>
+										<th>Perceived Benefits</th>
+										<th>Perceived Drawbacks</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+										<td><strong>Concept 1 (C1)</strong><br>AI as an independent counterspeaker</td>
+										<td>
+											<ul>
+											<li>Enhances efficiency in managing high comment volume</li>
+											<li>Provides emotional support by preventing impulsive replies</li>
+											<li>Serves as a neutral mediator in resolving factual or heated conflicts</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+											<li>Lacks emotional nuance and may sound insincere</li>
+											<li>Ineffective in changing haters’ behavior or building empathy</li>
+											<li>Blurs accountability and may misrepresent the creator’s voice</li>
+											<li>Undermines authenticity and trust in creator-audience interaction</li>
+											<li>Raises concerns about manipulation and platform control over discourse</li>
+											</ul>
+										</td>
+										</tr>
+
+										<tr>
+										<td><strong>Concept 2 (C2)</strong><br>AI assisting creators in crafting counterspeech</td>
+										<td>
+											<ul>
+											<li>Supports creators in drafting thoughtful and effective responses</li>
+											<li>Helps articulate thoughts when creators feel stuck or uninspired</li>
+											<li>Aids emotional regulation and reduces impulsive reactions to hate</li>
+											<li>Enhances tone and clarity, making counterspeech more reasoned</li>
+											<li>Encourages more intentional and reflective engagement with commenters</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+											<li>May reduce efficiency due to added emotional and time investment</li>
+											<li>Risk of generic or repetitive responses that lack personal touch</li>
+											<li>Could lead to prolonged back-and-forth interactions with haters</li>
+											<li>AI suggestions may feel intrusive or manipulative if not well-positioned</li>
+											<li>Raises concerns about autonomy when AI influence feels too strong</li>
+											</ul>
+										</td>
+										</tr>
+
+										<tr>
+										<td><strong>Concept 3 (C3)</strong><br>AI prompting bystanders to engage</td>
+										<td>
+											<ul>
+											<li>Encourages authentic, interpersonal counterspeech from real users</li>
+											<li>Human responses are seen as more credible and impactful</li>
+											<li>Supports independent thinking and situational judgment</li>
+											<li>Empowers community members and fosters long-term cultural change</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+											<li>Difficulty in accurately identifying willing and capable counterspeakers</li>
+											<li>Risk of bothering uninterested users, potentially reducing engagement</li>
+											<li>Counterspeech from untrained users may lack effectiveness</li>
+											<li>Potential to escalate conflict if AI invites biased or polarizing groups</li>
+											</ul>
+										</td>
+										</tr>
+									</tbody>
+									</table>
+									<p>Overall, one of the primary themes from our data can be described as "augmentation over replacement." Creators saw value in AI as a collaborator for counterspeech-based appraoches
+										to content moderation, but saw plenty of potential pitfalls without a human in the loop. They felt others might not respond well to being lectured by an AI system, and were 
+										also strongly motivated to preserve their own voice and perspective in these conversations.
+									  </p>
+
+									  <p>
+										There was also a significant need for transparency and control, with participants concerned about potential backfire effects of unleashing AI counterspeakers into their 
+										communities. Will these agents unintentionally surface hateful comments by engaging in prolonged discussions? Will the presence of AI agents among one's audience leave 
+										viewers questioning the authenticity of future interactions? Could AI counterspeech agents be used by platforms to suppress controversial discussions or healthy criticism? 
+										Despite their potential, the potential for unintended consequences in this space is high, and any platform-wide interventions need to carefully engage with the needs of 
+										both creators and audience members.
+									  </p>
+                            </div>
+                        </section>
+
+						<!-- Four -->
+                        <section id="four">
+                            <div class="container">
+                                <h3>Closing thoughts</h3>
+                                <p>Ultimately, its clear that despite its potential as a moderation tool, AI tools need to be designed with transparency, customizability, and human-in-the-loop principles in mind. It 
+									is also critical to consider many overlapping cultural contexts, including the particular cultures of one's country, platform, and specific community, as these can all impact 
+									the success of a given counterspeech strategy. Any tools deployed in this space must be carefully designed with an eye for nuance and accountability, and a lot more research 
+									is probably needed to understand the optimal design across different cultural contexts.
+								  </p>
+                            </div>
+                        </section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
