@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="google-site-verification" content="jmwYIxhAEWrfGCdMtmGEoX4ngaHfsYcrByFz9tm24IA" />
-		<link rel="stylesheet" href="../assets/css/new.css" />
+		<link rel="stylesheet" href="assets/css/new.css" />
         <script src="assets/js/accordian.js"></script> 
 	</head>
 
@@ -21,11 +21,11 @@
             </div>
 
         <nav class="nav-links">
-            <a href="../index.html">About</a>
-            <a href="../projects.html">Projects</a>
-            <a href="../people.html">People</a>
-            <a href="../publications.html">Publications</a>
-            <a href="../apply.html">Apply</a>
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="people.html" class="active">People</a>
+            <a href="publications.html">Publications</a>
+            <a href="apply.html">Apply</a>
         </nav>
 
         </div>

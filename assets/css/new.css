@@ -1,0 +1,401 @@
+/* =========================
+   1. Design Tokens
+========================= */
+
+:root {
+  --color-bg: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+  --color-primary: #2563eb;
+
+  --radius-md: 12px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+
+  --space-xl: 4rem;
+  --space-lg: 2.5rem;
+  --space-md: 1.5rem;
+  --space-sm: 1rem;
+}
+
+/* =========================
+   2. Base
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+/* =========================
+   3. Layout
+========================= */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.page-section {
+  padding: var(--space-xl) 0;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+
+.navbar {
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-primary);
+  padding: 0.5rem 0;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+.nav-links a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* =========================
+   5. Card Grid
+========================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.card h3 {
+  margin: 0 0 var(--space-sm);
+}
+
+.card p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card-tags {
+  margin: var(--space-sm) 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #e5edff;
+  color: var(--color-primary);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-right: 6px;
+}
+
+.card a {
+  margin-top: auto;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Horizontal card variant */
+.card--horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.card--horizontal img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.card-content h3,
+.card-content p {
+  margin: 0;
+}
+
+.card--horizontal .card-tags {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card--horizontal {
+    flex-direction: column;
+  }
+
+  .card--horizontal img {
+    width: 100%;
+  }
+}
+
+.pub-links {
+  margin: 0;
+}
+
+.pub-link {
+  color: var(--color-primary);
+  padding: 0px 0px;
+  margin-right: 32px;
+}
+
+/* =========================
+   5. Accordians
+========================= */
+
+.accordion {
+  margin: auto;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when open */
+.accordion-item.open .arrow {
+  transform: rotate(225deg);
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.accordion-inner {
+  padding: 0 20px 20px 20px;
+}
+
+
+/* =========================
+   6. Icon rows
+========================= */
+
+.icon-row {
+  display: flex;
+  gap: 16px;              /* space between icons */
+  align-items: center;
+}
+
+.icon-row a {
+  display: inline-flex;   /* better click area */
+  width: 32px;
+  height: 32px;
+}
+
+.icon-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Optional hover effect */
+.icon-row a:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+
+/* =========================
+   7. Tables
+========================= */
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;   /* cleaner look */
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+}
+
+table th,
+table td {
+  padding: 18px 24px;          /* generous whitespace */
+  text-align: left;
+}
+
+table thead {
+  background: #f5f7fa;
+}
+
+table th {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+
+
+/* =========================
+   Projects
+========================= */
+
+
+.big-tags {
+  margin: var(--space-sm) 0;
+}
+
+.big-tag {
+  display: inline-block;
+  background: #e5edff;
+  color: var(--color-primary);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 1rem;
+  margin-right: 6px;
+}
+
+.project_grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;  /* 3:1 ratio */
+  gap: 40px;                       /* space between columns */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+
+
+/* =========================
+   Small profiles
+========================= */
+
+.profile {
+  display: flex;
+  align-items: center;  
+  gap: 6px;
+}
+
+.avatar-small {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
